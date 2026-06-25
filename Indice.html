@@ -3,55 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Índice de Materias</title>
+    <title>VapeStore</title>
     <link rel="stylesheet" href="style.css">
-    <script src="javascript.js" defer></script>
 </head>
 <body>
-    <header>
-        <h1>Materias de la Carrera IDGS - UTSC</h1>
+
+    <header class="hero">
+        <div class="overlay">
+            <h1>VapeStore</h1>
+            <p>Los mejores sabores y promociones</p>
+            <a href="https://wa.me/5218112345678" class="btn">
+                Pedir por WhatsApp
+            </a>
+        </div>
     </header>
 
-    <section>
-        <!-- Tabla de Materias -->
-        <h2>Materias</h2>
-        <table>
-            <thead>
-                <tr>
-                    <th>Materia</th>
-                    <th>Profesor</th>
-                    <th>Horas</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Programación Web</td>
-                    <td>Prof. López</td>
-                    <td>3 horas/semana</td>
-                </tr>
-                <tr>
-                    <td>Redes de Computadoras</td>
-                    <td>Prof. García</td>
-                    <td>2 horas/semana</td>
-                </tr>
-                <tr>
-                    <td>Base de Datos</td>
-                    <td>Prof. Martínez</td>
-                    <td>2 horas/semana</td>
-                </tr>
-            </tbody>
-        </table>
-
-        <!-- Turnos y horarios -->
-        <h2>Turnos y Horarios</h2>
+    <section class="about">
+        <h2>Sobre Nosotros</h2>
         <p>
-            Turno matutino: Lunes a Viernes, de 8:00 AM a 12:00 PM <br>
-            Turno vespertino: Lunes a Viernes, de 3:00 PM a 7:00 PM
+            Encuentra una gran variedad de vapes y sabores con entrega rápida.
         </p>
-
-        <!-- Imagen TSU -->
-        <h2>TSU</h2>
-        <img src="tsu_image.jpg" alt="TSU" width="300">
     </section>
+
+    <section class="products">
+        <h2>Productos Destacados</h2>
+
+        <div class="grid">
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1513104890138-7c749659a591?w=600" alt="">
+                <h3>Blue Razz Ice</h3>
+                <p>$250 MXN</p>
+                <button onclick="pedir('Blue Razz Ice')">Pedir</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=600" alt="">
+                <h3>Mango Peach</h3>
+                <p>$280 MXN</p>
+                <button onclick="pedir('Mango Peach')">Pedir</button>
+            </div>
+
+            <div class="card">
+                <img src="https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=600" alt="">
+                <h3>Watermelon Ice</h3>
+                <p>$270 MXN</p>
+                <button onclick="pedir('Watermelon Ice')">Pedir</button>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 VapeStore</p>
+    </footer>
+
+    <script src="script.js"></script>
 </body>
 </html>
